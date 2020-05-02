@@ -12,8 +12,10 @@ Instead, you can follow these steps to install the functionality manually:
 
 1. Put the takePictureStep.py file in /usr/share/griffin/griffin/printer/procedures
 2. Add the following lines to the um3.json file in /usr/share/griffin/griffin/machines:
-`"TAKE_PICTURE": ["genericProcedure.GenericProcedure",`
-`    ["TAKE_PICTURE", "takePictureStep.TakePictureStep"]],`
+```
+"TAKE_PICTURE": ["genericProcedure.GenericProcedure",
+    ["TAKE_PICTURE", "takePictureStep.TakePictureStep"]],
+```
 It should be added in the section for defining what scripts to call; a safe bet is to look for the `"WAIT_FOR_QUEUE_TO_BE_EMPTY"` procedure and add it after that. The segment should look something like:
 ```
 "WAIT_FOR_QUEUE_TO_BE_EMPTY": ["genericProcedure.GenericProcedure",
