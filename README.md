@@ -33,4 +33,4 @@ Once all these steps are done, restart the printer and it should load the comman
 
 </br>
 
-Additonally, in this repo is the `TimeLapseRetract.py` script. The default PostProcessing script Ultimaker Cura comes with does not use retraction, and so will cause a lot of stringing if you want to do a timelapse. Simply load the `TimeLapseRetract.py` script into Cura, and use that instead, as it does feature retraction. On Macs this is as simple as putting it in Library>Application Support>cura>[version #]>scripts
+Additonally, in this repo is the `TimeLapseRetract.py` script. The default PostProcessing script Ultimaker Cura comes with does not use retraction, and so will cause a lot of stringing if you want to do a timelapse. Originally my solution for this was copying the script and modifying it to do retraction, however I've found it much simpler and more robust to simply enable retraction in Cura via normal print settings. If you want to use my script you can, but I wouldn't recommend it.
